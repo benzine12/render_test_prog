@@ -13,6 +13,10 @@ ar=[{"name":"betty","age":20},{"name":"alex","age":21},{"name":"shadi","age":15}
 @app.route('/')
 def hello():
     return json.dumps( ar)
- 
+
+@app.route('/')
+def test():
+    return {'test':'success'}
+
 if __name__ == '__main__':
     app.run()
