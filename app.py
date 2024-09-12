@@ -14,7 +14,7 @@ ar=[{"name":"betty","age":20},{"name":"alex","age":21},{"name":"shadi","age":15}
 def hello():
     return json.dumps( ar)
 
-@app.route('/')
+@app.route('/test')
 def test():
     return {'test':'success'}
 
